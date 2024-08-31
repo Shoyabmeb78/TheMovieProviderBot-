@@ -26,9 +26,9 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 🤖', url="https://telegram.me/Filmy_Rohesh")
+                    InlineKeyboardButton('🚀 ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ', url="https://telegram.me/Filmy_Rohesh")
                 ],[
-                    InlineKeyboardButton('💁‍♂️ sᴇᴇ ᴍᴇ 💁‍♂️', url=f"https://telegram.me/Rohesh_Gavit")
+                    InlineKeyboardButton(' ʜᴇʟᴘ  ', url=f"https://t.me/+1w1ON6SqvXNhY2M1")
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.GSTART_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -56,9 +56,9 @@ async def start(client, message):
         ],[
             InlineKeyboardButton(" ᴀɴɪᴍᴀᴛᴇᴅ ᴍᴏᴠɪᴇs  ", url='https://t.me/+tSPQ7nnIRCRjNTU1')
         ],[
-            InlineKeyboardButton(" sᴏᴜᴛʜ ᴍᴏᴠɪᴇs  ", url='https://t.me/+qfm3PCEhTk42MDFl')
+            InlineKeyboardButton(" sᴏᴜᴛʜ ᴍᴏᴠɪᴇs  ", url='https://t.me/+xlRAyUGkZBczYzE9')
         ],[
-            InlineKeyboardButton(" ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ", url='https://t.me/+qfm3PCEhTk42MDFl')
+            InlineKeyboardButton(" ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ", url='https://t.me/+P2I3zLewwR81MzJl')
         ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
