@@ -106,7 +106,7 @@ if 'DYNO' in environ:
     ATAME = environ.get('APP_NAME')
 else:
     ON_HEROKU = False
-BINDFT str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
+BINDFT str(getenv('WEB_SERVER_BIND_ADDRESS', '127.0.0.1')
 FQDN = str(getenv('FQDN', '')) or BIND_ADRESS or APP_NAME+'.heroku.com'
 URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
     "https://{}/".format(FQDN, PORT)
