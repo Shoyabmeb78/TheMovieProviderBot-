@@ -1,7 +1,7 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/Shoyabmeb78/TheMovieProviderBot-.git
+  git clone https://themovieproviderbot-1-dzxm.onrender.com
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /TheMovieProviderBot
