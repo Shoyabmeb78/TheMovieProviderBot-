@@ -107,7 +107,10 @@ if 'DYNO' in environ:
 else:
     ON_HEROKU = False
     BINDFSS = str(getenv( 'WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
-    FQDN = str(getenv('FQDN', '')) or BIND_ADRESS or APP_NAME+'.heroku.com'
+    if 'FQDN' in locals():
+    URL = "https://{}/".format(FQDN, PORT)
+else:
+    URL = "heroku.com"
 URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
     "https://{}/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
