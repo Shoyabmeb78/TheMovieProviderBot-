@@ -45,11 +45,22 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⇋ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇋', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url='https://telegram.me/Filmy_Rohesh'),
-            InlineKeyboardButton('💸 ᴘʀᴇᴍɪᴜᴍ', callback_data="seeplans")
+            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url=''),
+            InlineKeyboardButton('💸  ᴘʀɪᴍᴇ ᴄʜᴀɴɴᴇʟ ', url='https://t.me/Moviedrive28')
             ],[
-            InlineKeyboardButton("🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫", callback_data="shortlink_info")
+            InlineKeyboardButton(" ʜᴏʟʟʏᴡᴏᴏᴅ ", url='https://t.me/+qfm3PCEhTk42MDFl')
+        ],[
+            InlineKeyboardButton(" ʙᴏʟʟʏᴡᴏᴏᴅ ", url='https://t.me/+LL0wp9aOUHsxMzNl')
+        ],[
+            InlineKeyboardButton(" ᴡᴇʙ sᴇʀɪᴇs ", url='https://t.me/+qTQNMfRhPL1hODQ9')
+        ],[
+            InlineKeyboardButton(" ᴀɴɪᴍᴀᴛᴇᴅ ᴍᴏᴠɪᴇs  ", url='https://t.me/+tSPQ7nnIRCRjNTU1')
+        ],[
+            InlineKeyboardButton(" sᴏᴜᴛʜ ᴍᴏᴠɪᴇs  ", url='https://t.me/+qfm3PCEhTk42MDFl')
+        ],[
+            InlineKeyboardButton(" ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ", url='https://t.me/+qfm3PCEhTk42MDFl')
         ]]
+        
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
