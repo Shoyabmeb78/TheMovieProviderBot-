@@ -26,7 +26,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('🚀 ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ', url="https://telegram.me/Filmy_Rohesh")
+                    InlineKeyboardButton('🚀 ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ', url="https://t.me/Moviesdrive28")
                 ],[
                     InlineKeyboardButton(' ʜᴇʟᴘ  ', url=f"https://t.me/+1w1ON6SqvXNhY2M1")
                   ]]
@@ -43,9 +43,9 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⇋ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇋', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⇋ ᴍᴇssᴀɢᴇ sᴏʟᴠᴇ ᴘʀᴏʙʟᴇᴍ  ⇋', url='https://t.me/+1w1ON6SqvXNhY2M1')
             ],[
-            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url=''),
+            InlineKeyboardButton('⚙️ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Moviesdrive28'),
             InlineKeyboardButton('💸  ᴘʀɪᴍᴇ ᴄʜᴀɴɴᴇʟ ', url='https://t.me/Moviedrive28')
             ],[
             InlineKeyboardButton(" ʜᴏʟʟʏᴡᴏᴏᴅ ", url='https://t.me/+qfm3PCEhTk42MDFl')
@@ -94,7 +94,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌", url=invite_link.invite_link
+                    "📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌", url=invite_link.https://t.me/Moviesdrive28
                 )
             ]
         ]
@@ -113,14 +113,30 @@ async def start(client, message):
             )
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
-        buttons = [[
-            InlineKeyboardButton('⇋ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇋', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+        buttons = 
+              
+        [[
+            InlineKeyboardButton('⇋ ᴍᴇssᴀɢᴇ sᴏʟᴠᴇ ᴘʀᴏʙʟᴇᴍ  ⇋', url='https://t.me/+1w1ON6SqvXNhY2M1')  
             ],[
-            InlineKeyboardButton('⚙️ ᴄʜᴀɴɴᴇʟ', url='https://telegram.me/Filmy_Rohesh'),
-            InlineKeyboardButton('💸 ᴘʀᴇᴍɪᴜᴍ', callback_data="seeplans")
+            InlineKeyboardButton('⚙️ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Moviesdrive28'),
+            InlineKeyboardButton('💸  ᴘʀɪᴍᴇ ᴄʜᴀɴɴᴇʟ ', url='https://t.me/Moviedrive28')
+            ],[  
+            InlineKeyboardButton('💸  ᴘʀɪᴍᴇ ᴄʜᴀɴɴᴇʟ ', url='https://t.me/Moviedrive28')
             ],[
-            InlineKeyboardButton("🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫", callback_data="shortlink_info")
+            InlineKeyboardButton(" ʜᴏʟʟʏᴡᴏᴏᴅ ", url='https://t.me/+qfm3PCEhTk42MDFl')
+        ],[
+            InlineKeyboardButton(" ʙᴏʟʟʏᴡᴏᴏᴅ ", url='https://t.me/+LL0wp9aOUHsxMzNl')
+        ],[
+            InlineKeyboardButton(" ᴡᴇʙ sᴇʀɪᴇs ", url='https://t.me/+qTQNMfRhPL1hODQ9')
+        ],[
+            InlineKeyboardButton(" ᴀɴɪᴍᴀᴛᴇᴅ ᴍᴏᴠɪᴇs  ", url='https://t.me/+tSPQ7nnIRCRjNTU1')
+        ],[
+            InlineKeyboardButton(" sᴏᴜᴛʜ ᴍᴏᴠɪᴇs  ", url='https://t.me/+xlRAyUGkZBczYzE9')
+        ],[
+            InlineKeyboardButton(" ʙᴀᴄᴋᴜᴘ ᴄʜᴀɴɴᴇʟ ", url='https://t.me/+P2I3zLewwR81MzJl')
+         
         ]]
+    
         reply_markup = InlineKeyboardMarkup(buttons)
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
@@ -204,7 +220,7 @@ async def start(client, message):
                                 InlineKeyboardButton('✙ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ ✙', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('⊱ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⊰', url=f'https://t.me/Filmy_Rohesh') #Don't change anything without contacting me @LazyDeveloperr
+                                InlineKeyboardButton('⊱ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⊰', url=f'https://t.me/Moviesdrive28') #Don't change anything without contacting me @LazyDeveloperr
                             ]
                         ]
                     )
@@ -223,7 +239,7 @@ async def start(client, message):
                                 InlineKeyboardButton('✙ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ ✙', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('⊱ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⊰', url=f'https://t.me/Filmy_Rohesh') #Don't change anything without contacting me @LazyDeveloperr
+                                InlineKeyboardButton('⊱ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⊰', url=f'https://t.me/Moviesdrive28') #Don't change anything without contacting me @LazyDeveloperr
                             ]
                         ]
                     )
@@ -318,9 +334,8 @@ async def start(client, message):
         k = await client.send_message(chat_id=message.from_user.id,text=f"<b>👻ʜᴇʏ {message.from_user.mention},\n\nɴᴀᴍᴇ - <code>{files.file_name}</code> \n\nsɪᴢᴇ - {get_size(files.file_size)}\n\nʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ, ᴘʟᴇᴀsᴇ ɢᴇᴛ ᴜsɪɴɢ ᴛʜɪs ʟɪɴᴋ😋.\n\n</b>", reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('✅ ᴅᴏᴡɴʟᴏᴀᴅ ✅', url=g)
                     ], [
-                        InlineKeyboardButton('⁉️ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⁉️', url=await get_tutorial(chat_id))
+                        InlineKeyboardButton('⁉️ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⁉️', url='https://t.me/Dowloadprocess')
                     ], [
                         InlineKeyboardButton('😁 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 😁', callback_data="seeplans")                        
                     ]
@@ -354,9 +369,8 @@ async def start(client, message):
             text=f"<b>👻ʜᴇʏ {message.from_user.mention},\n\nɴᴀᴍᴇ - <code>{files.file_name}</code> \n\nsɪᴢᴇ - {get_size(files.file_size)}\n\nʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ, ᴘʟᴇᴀsᴇ ɢᴇᴛ ᴜsɪɴɢ ᴛʜɪs ʟɪɴᴋ😋.</b>",
             reply_markup=InlineKeyboardMarkup(
                 [[
-                    InlineKeyboardButton('✅ ᴅᴏᴡɴʟᴏᴀᴅ ✅', url=g)
                 ], [
-                    InlineKeyboardButton('⁉️ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⁉️', url=await get_tutorial(chat_id))
+                    InlineKeyboardButton('⁉️ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⁉️', url='https://t.me/Dowloadprocess')
                 ], [
                     InlineKeyboardButton('😁 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 😁', callback_data="seeplans")
                 ]]
@@ -389,7 +403,7 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files1.file_name.split()))}"
 
-            if not await check_verification(client, message.from_user.id) and VERIFY == True:
+            if not await check_verification(client, message.from_user.id) and VERIFY == false:
                 btn = [[
                     InlineKeyboardButton("✅ ᴠᴇʀɪꜰʏ ✅", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                 ],[
@@ -412,7 +426,7 @@ async def start(client, message):
               InlineKeyboardButton('✙ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ ✙', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('⊱ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⊰', url=f'https://t.me/Filmy_Rohesh') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('⊱ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⊰', url=f'https://t.me/Moviesdrive28') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
@@ -449,9 +463,8 @@ async def start(client, message):
             k = await client.send_message(chat_id=message.from_user.id,text=f"<b>👻ʜᴇʏ {message.from_user.mention},\n\nɴᴀᴍᴇ - <code>{files.file_name}</code> \n\nsɪᴢᴇ - {get_size(files.file_size)}\n\nʏᴏᴜʀ ғɪʟᴇ ɪs ʀᴇᴀᴅʏ, ᴘʟᴇᴀsᴇ ɢᴇᴛ ᴜsɪɴɢ ᴛʜɪs ʟɪɴᴋ😋.</b>\n\n", reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton('✅ ᴅᴏᴡɴʟᴏᴀᴅ ✅', url=g)
                         ], [
-                            InlineKeyboardButton('⁉️ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⁉️', url=await get_tutorial(chat_id))
+                            InlineKeyboardButton('⁉️ ʜᴏᴡ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ⁉️', url='https://t.me/Dowloadprocess')
                         ], [
                             InlineKeyboardButton('😁 ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ - ᴅɪʀᴇᴄᴛ ғɪʟᴇs 😁', callback_data="seeplans")                            
                         ]
@@ -466,7 +479,7 @@ async def start(client, message):
     if not files_:
         pre, file_id = ((base64.urlsafe_b64decode(data + "=" * (-len(data) % 4))).decode("ascii")).split("_", 1)
         try:
-            if not await check_verification(client, message.from_user.id) and VERIFY == True:
+            if not await check_verification(client, message.from_user.id) and VERIFY == False:
                 btn = [[
                     InlineKeyboardButton("✅ ᴠᴇʀɪꜰʏ ✅", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                 ],[
@@ -528,7 +541,7 @@ async def start(client, message):
     if f_caption is None:
         f_caption = f" {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))}"
 
-    if not await check_verification(client, message.from_user.id) and VERIFY == True:
+    if not await check_verification(client, message.from_user.id) and VERIFY == False:
         btn = [[
             InlineKeyboardButton("✅ ᴠᴇʀɪꜰʏ ✅", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
         ],[
@@ -551,7 +564,7 @@ async def start(client, message):
               InlineKeyboardButton('✙ ꜰᴀꜱᴛ ᴅᴏᴡɴʟᴏᴀᴅ & ᴡᴀᴛᴄʜ ᴏɴʟɪɴᴇ ✙', callback_data=f'generate_stream_link:{file_id}'),
              ],
              [
-              InlineKeyboardButton('⊱ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⊰', url=f'https://t.me/Filmy_Rohesh') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('⊱ ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ ⊰', url=f'https://t.me/Moviesdrive28') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
