@@ -109,8 +109,10 @@ else:
     BINDFSS = str(getenv( 'WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     if 'FQDN' in locals():
     URL = "https://{}/".format(FQDN, PORT)
+    # Agar FQDN variable ko define kiya gaya hai, to URL ko assign karen
 else:
     URL = "heroku.com"
+    # Agar FQDN variable ko define nahi kiya gaya hai, to URL ko default value assign karen
 URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
     "https://{}/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
