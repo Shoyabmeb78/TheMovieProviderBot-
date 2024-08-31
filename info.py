@@ -102,8 +102,8 @@ QUALITIES = ["360P", "", "480P", "", "720P", "", "1080P", "", "1440P", "", "2160
 NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
 if 'DYNO' in environ:
-    ON_HEROKU = True
-    APP_NAME = environ.get('APP_NAME')
+    ON_HEROKU = False
+    ATAME = environ.get('APP_NAME')
 else:
     ON_HEROKU = False
 BINDFT str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
